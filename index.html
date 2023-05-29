@@ -16,10 +16,31 @@
     <script defer src="js/script.js"></script>
 </head>
 <body>
-    <div>
-        <input type="number" id="kilometres-input" placeholder="Chilometri da percorrere">
-        <input type="number" id="age-input" placeholder="Età del passeggero">
+    <!-- generates ticket -->
+    <h1 class="text-center p-4 text-white"> CALCOLA IL PREZZO DEL TUO BIGLIETO</h1>
+    <div class="generates-ticket">
+
+        <div>
+            <input class="p-1 text-center" type="text" id="name-input" placeholder="Nome del passeggero">
+            <input class="mx-2 p-1 text-center" type="number" id="kilometres-input" placeholder="Km da percorrere">
+            <input class="p-1 text-center" type="number" id="age-input" placeholder="Età del passeggero">
+        </div>
+        <button id="calculate-button" class="mt-4 p-1 border-1 border-primary">Genera</button>
+        <button id="cancel-button" class="mt-4 p-1 border-1 border-primary ms-2">Annulla</button>
     </div>
-    <button id="calculate-button">Genera</button>
+     
+    <!-- your ticket -->
+    <div id="your-ticket" >
+        <h3 class="text-center p-4 text-white"> Il TUO BIGLIETO</h3>
+        <div class="ticket">
+            <div>
+                <p id="passenger-name"></p>
+                <p id="offer-description"></p>
+                <p id="result"></p>
+                <p id="carriage-number"></p>
+                <p id="ticket-number"></p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
